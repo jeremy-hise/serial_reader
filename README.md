@@ -22,3 +22,7 @@ Pre-run requirements
 $ sudo easy_install pip
 $ sudo pip install pyserial
 ```
+ Example usage:
+ ```
+ $ python serial_reader.py -p /dev/cu.usbserial-ASASD -n 100 -f data.csv
+ ```
