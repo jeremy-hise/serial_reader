@@ -2,6 +2,7 @@
 
 Simple utility for reading from a serial port. 
 
+```
 usage: serial_reader.py [-h] [-V] -p PORT [-n NUMBER] [-b BAUD] [-f FILE]
 
 optional arguments:
@@ -13,3 +14,11 @@ optional arguments:
                         infinite.
   -b BAUD, --baud BAUD  Specify the baud rate. Default is 9600
   -f FILE, --file FILE  Specify a filename to output to
+```
+
+Pre-run requirements
+
+```
+$ sudo easy_install pip
+$ sudo pip install pyserial
+```
