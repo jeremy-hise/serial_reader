@@ -12,6 +12,7 @@ parser.add_argument("-f", "--file", help="Specify a filename to output to")
 
 # read arguments from the command line
 args = parser.parse_args()
+
 running = True
 current_it = 0
 
@@ -24,7 +25,7 @@ while running == True:
 	with serial.Serial(args.port, args.baud, timeout=10) as ser:
 		line=ser.readline()
 		print (line.rstrip())
-		if args.file != "":
+		if args.file != None:
 			fh = open(args.file, "a")
 			fh.write(line.rstrip()+"\n")
 			fh.close()
