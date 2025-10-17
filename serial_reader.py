@@ -36,7 +36,7 @@ while running == True:
 		print (line.rstrip())
 		if args.file != None:
 			fh = open(args.file, "a")
-			fh.write(line.rstrip()+"\n")
+			fh.write(str(line.rstrip())+"\n")
 			fh.close()
 
 		current_it = current_it + 1
